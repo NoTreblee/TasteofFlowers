@@ -18,6 +18,10 @@ body {
   background-color: #f8f9fa;
 }
 
+main {
+  z-index: 0;
+}
+
 h2 {
   text-align: center;
   text-transform: uppercase;
@@ -57,6 +61,7 @@ nav {
 nav a,
 nav i {
   color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 nav a:hover {
@@ -73,6 +78,10 @@ nav .navbar-brand {
 
 nav .active {
   color: #ffc2e4;
+}
+
+.none {
+  opacity: 0;
 }
 
 header {
@@ -108,7 +117,7 @@ header .hero-shadow {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 header .hero-text {
@@ -133,6 +142,14 @@ header .hero-text {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+header .hero-text .logo {
+  position: fixed;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
 header .btn-outline-light {
   text-transform: uppercase;
 }
@@ -147,6 +164,7 @@ header .fa-chevron-down {
   color: #fff;
   -webkit-animation: spring 5s infinite;
           animation: spring 5s infinite;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 @-webkit-keyframes spring {
